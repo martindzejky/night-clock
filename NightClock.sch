@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title "Night clock"
-Date "2020-04-10"
+Date "2020-04-11"
 Rev "1"
 Comp "Džejky"
 Comment1 ""
@@ -17,10 +17,10 @@ $Comp
 L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 5E8101CD
 P 4150 3800
-F 0 "A1" H 4150 2700 50  0000 C CNN
-F 1 "Arduino Nano" H 4150 2600 50  0000 C CNN
+F 0 "A1" H 3800 2800 50  0000 C CNN
+F 1 "Arduino Nano" H 3800 2700 50  0000 C CNN
 F 2 "Module:Arduino_Nano" H 4150 3800 50  0001 C CIN
-F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 4150 3800 50  0001 C CNN
+F 3 "https://content.arduino.cc/assets/Pinout-NANO_latest.pdf" H 4150 3800 50  0001 C CNN
 	1    4150 3800
 	1    0    0    -1  
 $EndComp
@@ -138,18 +138,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR06
 U 1 1 5E87F331
-P 4650 4950
-F 0 "#PWR06" H 4650 4700 50  0001 C CNN
-F 1 "GND" H 4700 4750 50  0000 C CNN
-F 2 "" H 4650 4950 50  0001 C CNN
-F 3 "" H 4650 4950 50  0001 C CNN
-	1    4650 4950
+P 4250 5150
+F 0 "#PWR06" H 4250 4900 50  0001 C CNN
+F 1 "GND" H 4300 4950 50  0000 C CNN
+F 2 "" H 4250 5150 50  0001 C CNN
+F 3 "" H 4250 5150 50  0001 C CNN
+	1    4250 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 4950 4650 4800
-Wire Wire Line
-	4650 4800 4250 4800
+	4250 5150 4250 4800
 Connection ~ 4250 4800
 Wire Wire Line
 	4250 4800 4150 4800
@@ -168,34 +166,12 @@ Wire Wire Line
 	4350 2550 4350 2800
 Text GLabel 2400 6300 2    50   Input ~ 0
 MIC
-Text GLabel 4950 3800 2    50   Input ~ 0
-MIC
-Wire Wire Line
-	4950 3800 4650 3800
-Text GLabel 5100 3950 2    50   Input ~ 0
+Text GLabel 5050 3900 2    50   Input ~ 0
 BTN+
-Text GLabel 5100 4100 2    50   Input ~ 0
+Text GLabel 5050 4000 2    50   Input ~ 0
 BTN-
-Text GLabel 5100 4250 2    50   Input ~ 0
+Text GLabel 5050 4100 2    50   Input ~ 0
 BTNOK
-Wire Wire Line
-	5100 3950 4900 3950
-Wire Wire Line
-	4900 3950 4900 3900
-Wire Wire Line
-	4900 3900 4650 3900
-Wire Wire Line
-	4650 4000 4950 4000
-Wire Wire Line
-	4950 4000 4950 4100
-Wire Wire Line
-	4950 4100 5100 4100
-Wire Wire Line
-	5100 4250 4900 4250
-Wire Wire Line
-	4900 4250 4900 4100
-Wire Wire Line
-	4900 4100 4650 4100
 Text GLabel 1550 1250 0    50   Input ~ 0
 BTN+
 Text GLabel 1550 1750 0    50   Input ~ 0
@@ -304,30 +280,10 @@ Text GLabel 7050 5600 0    50   Input ~ 0
 DATA2
 Text GLabel 7050 5850 0    50   Input ~ 0
 CLK2
-Text GLabel 3500 4700 3    50   Input ~ 0
-DATA1
-Text GLabel 3400 4700 3    50   Input ~ 0
-CLK1
-Text GLabel 3250 4700 3    50   Input ~ 0
+Text GLabel 3250 4300 0    50   Input ~ 0
 DATA2
-Text GLabel 3150 4700 3    50   Input ~ 0
+Text GLabel 3250 4200 0    50   Input ~ 0
 CLK2
-Wire Wire Line
-	3500 4700 3500 4500
-Wire Wire Line
-	3500 4500 3650 4500
-Wire Wire Line
-	3650 4400 3400 4400
-Wire Wire Line
-	3400 4400 3400 4700
-Wire Wire Line
-	3650 4300 3250 4300
-Wire Wire Line
-	3250 4300 3250 4700
-Wire Wire Line
-	3650 4200 3150 4200
-Wire Wire Line
-	3150 4200 3150 4700
 Text GLabel 6400 3350 0    50   Input ~ 0
 DOT1
 Text GLabel 6400 3800 0    50   Input ~ 0
@@ -344,11 +300,11 @@ Wire Wire Line
 	3250 4000 3650 4000
 Wire Wire Line
 	3650 4100 3250 4100
-Text GLabel 3050 3450 0    50   Input ~ 0
+Text GLabel 3250 3700 0    50   Input ~ 0
 COLUMN1_1
-Text GLabel 3050 3600 0    50   Input ~ 0
+Text GLabel 3250 3800 0    50   Input ~ 0
 COLUMN1_2
-Text GLabel 3050 3750 0    50   Input ~ 0
+Text GLabel 3250 3900 0    50   Input ~ 0
 COLUMN1_3
 Text GLabel 7100 4600 0    50   Input ~ 0
 COLUMN2_1
@@ -356,54 +312,17 @@ Text GLabel 7100 4850 0    50   Input ~ 0
 COLUMN2_2
 Text GLabel 7100 5100 0    50   Input ~ 0
 COLUMN2_3
-Text GLabel 3350 3100 1    50   Input ~ 0
+Text GLabel 3250 3400 0    50   Input ~ 0
 COLUMN2_1
-Text GLabel 3200 3100 1    50   Input ~ 0
+Text GLabel 3250 3500 0    50   Input ~ 0
 COLUMN2_2
-Text GLabel 3050 3100 1    50   Input ~ 0
+Text GLabel 3250 3600 0    50   Input ~ 0
 COLUMN2_3
 Wire Wire Line
-	3050 3750 3100 3750
+	3250 3900 3650 3900
 Wire Wire Line
-	3100 3750 3100 3900
-Wire Wire Line
-	3100 3900 3650 3900
-Wire Wire Line
-	3650 3800 3150 3800
-Wire Wire Line
-	3150 3800 3150 3600
-Wire Wire Line
-	3150 3600 3050 3600
-Wire Wire Line
-	3050 3450 3200 3450
-Wire Wire Line
-	3200 3450 3200 3700
-Wire Wire Line
-	3200 3700 3650 3700
-Wire Wire Line
-	3650 3600 3250 3600
-Wire Wire Line
-	3250 3600 3250 3350
-Wire Wire Line
-	3250 3350 3050 3350
-Wire Wire Line
-	3050 3350 3050 3100
-Wire Wire Line
-	3200 3100 3200 3300
-Wire Wire Line
-	3200 3300 3300 3300
-Wire Wire Line
-	3300 3300 3300 3500
-Wire Wire Line
-	3300 3500 3650 3500
-Wire Wire Line
-	3650 3400 3350 3400
-Wire Wire Line
-	3350 3400 3350 3100
+	3650 3800 3250 3800
 NoConn ~ 4650 4500
-NoConn ~ 4650 4400
-NoConn ~ 4650 4300
-NoConn ~ 4650 4200
 NoConn ~ 4650 3600
 NoConn ~ 4650 3300
 NoConn ~ 4650 3200
@@ -416,9 +335,10 @@ S 1400 6150 650  500
 U 5E890208
 F0 "Microphone with amplifier" 50
 F1 "MicrophoneWithAmplifier.sch" 50
-F2 "OUT" I R 2050 6300 50 
+F2 "MIC" I R 2050 6300 50 
 F3 "VCC" I L 1400 6300 50 
 F4 "GND" I L 1400 6500 50 
+F5 "INT" I R 2050 6500 50 
 $EndSheet
 Wire Wire Line
 	2050 6300 2400 6300
@@ -570,4 +490,50 @@ F 3 "" H 8850 6150 50  0001 C CNN
 	1    8850 6150
 	1    0    0    -1  
 $EndComp
+Text GLabel 5050 3800 2    50   Input ~ 0
+MICINT
+Wire Wire Line
+	5050 3800 4650 3800
+Wire Wire Line
+	5050 4400 4650 4400
+Text GLabel 5050 4400 2    50   Input ~ 0
+MIC
+Wire Wire Line
+	4650 3900 5050 3900
+Wire Wire Line
+	4650 4000 5050 4000
+Wire Wire Line
+	4650 4100 5050 4100
+Text GLabel 5050 4200 2    50   Input ~ 0
+SDA
+Text GLabel 5050 4300 2    50   Input ~ 0
+SCL
+Wire Wire Line
+	4650 4200 5050 4200
+Wire Wire Line
+	4650 4300 5050 4300
+Wire Wire Line
+	3250 3700 3650 3700
+Wire Wire Line
+	3650 3600 3250 3600
+Wire Wire Line
+	3250 3400 3650 3400
+Wire Wire Line
+	3250 3500 3650 3500
+Wire Wire Line
+	3250 4300 3650 4300
+Wire Wire Line
+	3250 4200 3650 4200
+Text GLabel 3250 4400 0    50   Input ~ 0
+CLK1
+Text GLabel 3250 4500 0    50   Input ~ 0
+DATA1
+Wire Wire Line
+	3250 4400 3650 4400
+Wire Wire Line
+	3250 4500 3650 4500
+Text GLabel 2400 6500 2    50   Input ~ 0
+MICINT
+Wire Wire Line
+	2400 6500 2050 6500
 $EndSCHEMATC

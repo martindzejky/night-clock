@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
 Title "Microphone with amplifier"
-Date "2020-04-10"
+Date "2020-04-11"
 Rev "1"
 Comp "Džejky"
 Comment1 ""
@@ -77,14 +77,14 @@ L Device:R R10
 U 1 1 5E89793E
 P 6050 3750
 F 0 "R10" V 5800 3750 50  0000 C CNN
-F 1 "47k" V 5900 3750 50  0000 C CNN
+F 1 "100k" V 5900 3750 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" V 5980 3750 50  0001 C CNN
 F 3 "~" H 6050 3750 50  0001 C CNN
 	1    6050 3750
 	0    1    1    0   
 $EndComp
 Text HLabel 6650 3350 2    50   Input ~ 0
-OUT
+MIC
 $Comp
 L Device:Microphone_Condenser MK1
 U 1 1 5E8B27A6
@@ -160,15 +160,12 @@ Wire Wire Line
 Connection ~ 5600 4000
 Wire Wire Line
 	5600 4000 6650 4000
-NoConn ~ 7850 4000
-NoConn ~ 7850 4250
-NoConn ~ 7850 4450
 Wire Wire Line
-	7850 3750 8300 3750
+	7850 3750 7950 3750
 Wire Wire Line
-	8300 3750 8300 3150
+	7950 3750 7950 3150
 Wire Wire Line
-	5450 3150 8300 3150
+	5450 3150 7950 3150
 Wire Wire Line
 	6200 3750 6300 3750
 Wire Wire Line
@@ -176,4 +173,64 @@ Wire Wire Line
 Connection ~ 6300 3750
 Wire Wire Line
 	6300 3750 6650 3750
+Wire Wire Line
+	7850 4000 9300 4000
+Text HLabel 9300 4000 2    50   Input ~ 0
+INT
+Text HLabel 8100 4450 2    50   Input ~ 0
+MIC
+Wire Wire Line
+	8100 4450 7850 4450
+$Comp
+L Device:R R17
+U 1 1 5E9831A3
+P 8650 3750
+F 0 "R17" V 8400 3750 50  0000 C CNN
+F 1 "100k" V 8500 3750 50  0000 C CNN
+F 2 "" V 8580 3750 50  0001 C CNN
+F 3 "~" H 8650 3750 50  0001 C CNN
+	1    8650 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5E983950
+P 8900 4450
+F 0 "R18" H 8800 4400 50  0000 R CNN
+F 1 "220k" H 8800 4450 50  0000 R CNN
+F 2 "" V 8830 4450 50  0001 C CNN
+F 3 "~" H 8900 4450 50  0001 C CNN
+	1    8900 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7850 4250 8900 4250
+Wire Wire Line
+	8900 4250 8900 4300
+Wire Wire Line
+	8900 4250 8900 3750
+Connection ~ 8900 4250
+Wire Wire Line
+	8900 4600 8900 4900
+Wire Wire Line
+	8900 4900 6400 4900
+Connection ~ 6400 4900
+$Comp
+L Device:R R19
+U 1 1 5E98D539
+P 8250 3750
+F 0 "R19" V 8000 3750 50  0000 C CNN
+F 1 "22k" V 8100 3750 50  0000 C CNN
+F 2 "" V 8180 3750 50  0001 C CNN
+F 3 "~" H 8250 3750 50  0001 C CNN
+	1    8250 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 3750 8900 3750
+Wire Wire Line
+	8500 3750 8400 3750
+Wire Wire Line
+	8100 3750 7950 3750
+Connection ~ 7950 3750
 $EndSCHEMATC
