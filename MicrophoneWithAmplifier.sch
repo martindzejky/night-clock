@@ -233,4 +233,6 @@ Wire Wire Line
 Wire Wire Line
 	8100 3750 7950 3750
 Connection ~ 7950 3750
+Text Label 4050 4000 2    50   ~ 0
+MIC+
 $EndSCHEMATC

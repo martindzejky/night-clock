@@ -1,4 +1,4 @@
-update=2020 April 11, Saturday 23:09:36
+update=2020 April 12, Sunday 18:22:06
 last_client=kicad
 [general]
 version=1
@@ -6,19 +6,20 @@ version=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=
-CopperLayerCount=2
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=1
+MinTrackWidth=0.2
 MinViaDiameter=2
 MinViaDrill=1.5
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=1
+TrackWidth2=0.2
 ViaDiameter1=2
 ViaDrill1=1.5
 dPairWidth1=1
@@ -49,17 +50,17 @@ SolderMaskMinWidth=0.25
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
-Name=F.Cu
+Name=Front
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
-Name=In1.Cu
+Name=Back
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In2.Cu]
-Name=In2.Cu
-Type=0
-Enabled=0
+Name=Jump1
+Type=3
+Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
@@ -173,8 +174,8 @@ Name=In30.Cu
 Type=0
 Enabled=0
 [pcbnew/Layer.B.Cu]
-Name=B.Cu
-Type=0
+Name=Jump2
+Type=3
 Enabled=1
 [pcbnew/Layer.B.Adhes]
 Enabled=0
@@ -185,7 +186,7 @@ Enabled=0
 [pcbnew/Layer.F.Paste]
 Enabled=0
 [pcbnew/Layer.B.SilkS]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.F.SilkS]
 Enabled=1
 [pcbnew/Layer.B.Mask]
@@ -209,9 +210,9 @@ Enabled=1
 [pcbnew/Layer.F.CrtYd]
 Enabled=1
 [pcbnew/Layer.B.Fab]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.F.Fab]
-Enabled=0
+Enabled=1
 [pcbnew/Layer.Rescue]
 Enabled=0
 [pcbnew/Netclasses]
